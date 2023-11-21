@@ -1,0 +1,27 @@
+[
+    {
+      "name": "The amphibian",
+      "desc": "Frog legs served with white wine reduction sauce.",
+      "price": 95
+    },
+    {
+      "name": "Potato and roe",
+      "desc": "Dulse beurre blanc, herring and trout roe",
+      "price": 88
+    },
+    {
+      "name": "Roasted cod",
+      "desc": "Morecambe bay shrimps, Swiss chard, brown butter",
+      "price": 110
+    },
+    {
+      "name": "Chicken, cockles, clams and caviar",
+      "desc": "Sutton Hoo chicken, sea aster and kohlrabi",
+      "price": 125
+    },
+    {
+      "name": "More apple",
+      "desc": "Toffee and Somerset cider brandy",
+      "price": 71
+    }
+  ]

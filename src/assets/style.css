@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@400;700&family=Playfair+Display:ital@0;1&display=swap');
+
+:root {
+    --bg-color: rgba(2, 2, 103, 0.597);;
+    --menu-bg-color: rgba(0, 0, 0, 0);
+    --header-bg-color: rgba(15, 15, 116, 0.834);
+    --btn-bg-color: rgb(223, 229, 102);
+
+    --title-margin: 15px;
+    --para-margin: 10px;
+    --btn-margin: 15px;
+    --menu-item-content-margin: 5px;
+
+    --content-padding: 30px;
+    --btn-padding: 10px;
+    --menu-item-padding: 15px;
+
+    --sectiom-margin: 20px;
+    --comp-margin: 10px;
+
+    --btn-border-rad: 5px;
+
+    --nav-hover-border-color: rgb(223, 229, 102); 
+
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Playfair Display", serif;
+    color: white;
+}
+
+/* Initial rules */
+
+h1, h2, h3 {
+    margin: var(--title-margin);
+}
+
+p, span {
+    margin: var(--para-margin);
+    text-align: center;
+}
+
+body {
+    height: 100vh;
+
+    margin: 0;
+
+    display: grid;
+    grid-template-rows: 60px auto 50px;
+
+    background-image: url(https://images.unsplash.com/photo-1557955776-857434f1c951?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+}
+
+#content {
+    padding: var(--content-padding);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: var(--bg-color);
+}
+
+.section {
+    margin: var(--sectiom-margin);
+}
+
+/* Header and navigation */
+
+.header {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    justify-content: center;
+
+    background-color: var(--header-bg-color);
+
+    box-shadow: 0px 14px 19px -3px rgba(0,0,0,0.1);
+}
+
+.nav {
+    padding: 0;
+    width: 400px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav > * {
+    text-transform: uppercase;
+    cursor: pointer;
+
+    font-size: 1.1rem;
+}
+
+.nav > *:hover {
+    border-bottom: 2px solid var(--nav-hover-border-color);
+}
+
+/* Tab rules */
+
+.tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.tab > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Footer rules */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--header-bg-color);
+    box-shadow: 0px 14px 19px -3px rgba(0,0,0,0.1);
+}
+
+.footer > a {
+    color: white;
+}
+
+/* Logo section rules */
+
+.logo > h1 {
+    font-size: 4rem;
+    font-family: "Great Vibes";
+}
+
+/* Icon text section rules */
+
+.icon-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+}
+
+/* Menu item component rules */
+
+.menu-item {
+    padding: var(--menu-item-padding);
+    border-bottom: 1px solid white;
+
+    width: 310px;
+    margin: var(--comp-margin);
+}
+
+.menu-item > h3, .menu-item > p {
+    margin: var(--menu-item-content-margin);
+}
+
+.menu-item > p {
+    font-size: 0.8rem;
+}
+
+/* Button rules */
+
+button {
+    width: 120px;
+    padding: var(--btn-padding);
+    margin: var(--btn-margin);
+
+    border: none;
+    border-radius: var(--btn-border-rad);
+
+    font-family: "Playfair Display", serif;
+    font-size: 1.0rem;
+
+    background-color: var(--btn-bg-color);
+}
+
+/* Misc. rules */
+
+.text > p {
+    margin: 0;
+}
